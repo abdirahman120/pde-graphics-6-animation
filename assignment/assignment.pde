@@ -1,14 +1,12 @@
-/**
+
+ /**
  * animation
- * by Dr. P.
- * 
- * Simple animation demo
- * 
- */
+ * <name>abdirahman120
+ * */
  
 int x = 200;
 int y = 200;
-int delta = 5;
+int delta = 7;
 
 void setup() {
   size(400,400);
@@ -21,19 +19,20 @@ void draw() {
  ellipse(200, y, 50, 50);
  ellipse(x,200,50,50);
   y = y + delta;
-  if (y == height-20) {
-    delta = -5;
+   x = x+ delta;
+  if (y == height-25) {
+    delta = 7;
   }
   if (y == 25) {
-    delta = 5;
+    delta = 7;
    
   } 
-   x = x+ delta;
-  if (x == height-20) {
-    delta = -5;
+  
+  if (x == width-25) {
+    delta = -7;
   }
   if (x== 25) {
-    delta = 5;
+    delta = 7;
    
   } 
 }
